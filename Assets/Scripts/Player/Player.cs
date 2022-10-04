@@ -6,7 +6,7 @@ public class Player : MonoBehaviour
 
     public void ApplyDamage(int damage)
     {
-        _lives = damage;
+        _lives -= damage;
 
         if (_lives <= 0)
         {
