@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class EnemySpawner : ObjectPool
 {
-    [SerializeField] private GameObject _prefab;
+    [SerializeField] private GameObject[] _prefabs;
     [SerializeField] private Transform[] _spawnPoints;
     [SerializeField] private float _intervalTime = 1;
 
@@ -10,7 +10,7 @@ public class EnemySpawner : ObjectPool
 
     private void Start()
     {
-        Initialize(_prefab);
+        Initialize(_prefabs);
     }
 
     private void Update()

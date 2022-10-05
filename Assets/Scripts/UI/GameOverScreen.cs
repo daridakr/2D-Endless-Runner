@@ -35,11 +35,13 @@ public class GameOverScreen : MonoBehaviour
     private void Start()
     {
         _canvasGroup.alpha = 0;
+        _canvasGroup.interactable = false;
     }
 
     private void OnPlayerDied()
     {
         _canvasGroup.alpha = 1;
+        _canvasGroup.interactable = true;
         Time.timeScale = 0;
     }
 
