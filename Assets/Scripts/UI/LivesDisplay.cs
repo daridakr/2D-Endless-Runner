@@ -8,11 +8,6 @@ public class LivesDisplay : MonoBehaviour
     
     private TMP_Text _livesDisplay;
 
-    private void Start()
-    {
-        _livesDisplay = GetComponent<TMP_Text>();
-    }
-
     private void OnEnable()
     {
         _target.LivesChanged += OnLivesChanged;
@@ -21,6 +16,11 @@ public class LivesDisplay : MonoBehaviour
     private void OnDisable()
     {
         _target.LivesChanged -= OnLivesChanged;
+    }
+
+    private void Awake()
+    {
+        _livesDisplay = GetComponent<TMP_Text>();
     }
 
     private void OnLivesChanged(int lives)
