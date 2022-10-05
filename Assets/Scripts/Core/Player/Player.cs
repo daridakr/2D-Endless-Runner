@@ -4,6 +4,7 @@ using UnityEngine.Events;
 public class Player : MonoBehaviour
 {
     [SerializeField] private int _lives;
+    [SerializeField] private AudioSource _hitSounder;
 
     public event UnityAction<int> LivesChanged;
     public event UnityAction Died;
@@ -15,6 +16,8 @@ public class Player : MonoBehaviour
 
     public void ApplyDamage(int damage)
     {
+        _hitSounder.Play();
+
         _lives -= damage;
         LivesChanged?.Invoke(_lives);
 

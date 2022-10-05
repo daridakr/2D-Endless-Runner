@@ -8,6 +8,7 @@ public class GameOverScreen : MonoBehaviour
     [SerializeField] private Player _player;
     [SerializeField] private Button _restartButton;
     [SerializeField] private Button _exitButton;
+    [SerializeField] private AudioSource _gameOverSounder;
 
     private CanvasGroup _canvasGroup;
 
@@ -40,6 +41,7 @@ public class GameOverScreen : MonoBehaviour
 
     private void OnPlayerDied()
     {
+        _gameOverSounder.Play();
         _canvasGroup.alpha = 1;
         _canvasGroup.interactable = true;
         Time.timeScale = 0;

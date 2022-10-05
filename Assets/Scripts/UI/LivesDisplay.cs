@@ -5,7 +5,7 @@ using UnityEngine;
 public class LivesDisplay : MonoBehaviour
 {
     [SerializeField] private Player _target;
-    
+
     private TMP_Text _livesDisplay;
 
     private void OnEnable()
