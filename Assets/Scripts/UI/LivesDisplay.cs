@@ -25,6 +25,6 @@ public class LivesDisplay : MonoBehaviour
 
     private void OnLivesChanged(int lives)
     {
-        _livesDisplay.text = lives.ToString();
+        _livesDisplay.text = $"Lives: {lives}";
     }
 }
