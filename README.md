@@ -10,9 +10,9 @@
 
 <div align="center">
 
-![GitHub watchers](https://img.shields.io/github/watchers/daridakr/helix-jump?style=flat-square)
-![GitHub Repo stars](https://img.shields.io/github/stars/daridakr/helix-jump?style=flat-square)
-![GitHub last commit](https://img.shields.io/github/last-commit/daridakr/helix-jump?style=flat-square)
+![GitHub watchers](https://img.shields.io/github/watchers/daridakr/2D-Space-Endless-Runner?style=flat-square)
+![GitHub Repo stars](https://img.shields.io/github/stars/daridakr/2D-Space-Endless-Runner?style=flat-square)
+![GitHub last commit](https://img.shields.io/github/last-commit/daridakr/2D-Space-Endless-Runner?style=flat-square)
 
 </div>
 
